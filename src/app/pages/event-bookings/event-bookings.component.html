@@ -1,0 +1,25 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Booking</li>
+  </ol>
+</nav>
+<div class="row">
+    <div class="col-4" *ngFor="let booking of bookings">
+        <div class="card">
+            <div class="card-body">
+              <h6 class="card-title" title="{{booking.eventName }}">{{booking.eventName |slice:0-20}}</h6>
+              <p class="card-text"><i class="fa  fa-calendar"></i> {{booking.startDate |date: 'dd-MMM-yy'}}</p>
+              <a href="#" class="card-link">No Of Tickets : {{booking.noOfTickets}}</a> 
+              <div class="row">
+                <div class="col-6">
+                  <i class="fa  fa-user"></i> {{booking.customerName}}
+                </div>
+                <div class="col-6">
+                  <i class="fa  fa-phone"></i> {{booking.customerMobile}}
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>

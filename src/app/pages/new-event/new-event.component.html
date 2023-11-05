@@ -1,0 +1,72 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">New Event</li>
+    </ol>
+  </nav>
+<div class="row">
+    <div class="col-4">
+        <label for="">Event Title</label>
+        <input type="text" [(ngModel)]="eventObj.EventName" class="form-control">
+    </div>
+    <div class="col-3">
+        <label for="">Event Location</label>
+        <input type="text" [(ngModel)]="eventObj.Location" class="form-control">
+    </div>
+</div>
+<div class="row">
+    <div class="col-2">
+        <label for="">Start Date</label>
+        <input type="date" [(ngModel)]="eventObj.StartDate" class="form-control">
+    </div>
+    <div class="col-2">
+        <label for="">Start Time</label>
+        <input type="text" [(ngModel)]="eventObj.StartTime" class="form-control">
+    </div>
+    <div class="col-2">
+        <label for="">End Date</label>
+        <input type="date" [(ngModel)]="eventObj.EndDate" class="form-control">
+    </div>
+    <div class="col-2">
+        <label for="">End Time</label>
+        <input type="text" [(ngModel)]="eventObj.EndTime" class="form-control">
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <label for="">Max Capacity</label>
+        <input type="text" [(ngModel)]="eventObj.Capacity" class="form-control">
+    </div>
+    <div class="col-3">
+        <label for="">Entry Fee</label>
+        <input type="text" [(ngModel)]="eventObj.Price" class="form-control">
+    </div>
+    <div class="col-3">
+        <label for="">Image Url</label>
+        <input type="text" [(ngModel)]="eventObj.ImageUrl" class="form-control">
+    </div>
+</div>
+<div class="row">
+    <div class="col-3">
+        <label for="">Is Identity Mandatory</label>
+        <input type="checkbox" [(ngModel)]="eventObj.IsIdentityMandatory">
+    </div>
+    <div class="col-3">
+        <label for="">Is Couple Mandatory</label>
+        <input type="checkbox" [(ngModel)]="eventObj.IsCoupleEntryMandatory">
+    </div>
+</div>
+<div class="row">
+    <div class="col-6">
+        <label for="">Description</label>
+        <textarea [(ngModel)]="eventObj.Description" rows="3" class="form-control"></textarea>
+    </div>
+</div>
+<div class="row pt-3 text-center">
+    <div class="col-3 ">
+        <button class="btn btn-primary">Cancel</button>
+    </div>
+    <div class="col-3">
+        <button class="btn btn-success" (click)="onCreateEvent()">Create Event</button>
+    </div>
+</div>

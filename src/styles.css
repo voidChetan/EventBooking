@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+.primary-btn {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px 40px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 50px;
+    background-image: -webkit-gradient(linear, left top, right top, from(#ee8425), to(#f9488b)), -webkit-gradient(linear, left top, right top, from(#ee8425), to(#f9488b));
+    background-image: -o-linear-gradient(left, #ee8425 0%, #f9488b 100%), -o-linear-gradient(left, #ee8425 0%, #f9488b 100%);
+    background-image: linear-gradient(to right, #ee8425 0%, #f9488b 100%), linear-gradient(to right, #ee8425 0%, #f9488b 100%);
+}
+
+.form-control {
+    border: 1px solid #243a50;
+}
+.card {
+    background-color: #e56767 !important;
+    color: white;
+}
+.card a {
+    color: white !important;
+}

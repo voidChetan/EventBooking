@@ -1,0 +1,27 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Events</li>
+  </ol>
+</nav>
+<div class="row">
+    <div class="col-4" *ngFor="let event of eventList">
+        <div class="card">
+            <img class="card-img-top" style="height: 200px;" [src]="event.imageUrl" alt="Card image">
+            <div class="card-body">
+              <h4 class="card-title" title="{{event.eventName }}">{{event.eventName |slice:0-20}}</h4>
+              <div class="row">
+                <div class="col-4">
+                  <i class="fa  fa-calendar"></i>{{event.startDate |date:'dd-MMM-yy'}}
+                </div>
+                <div class="col-4 text-center">
+                  <i class="fa  fa-map"></i> {{event.location}} 
+                </div>
+                <div class="col-4 text-end">
+                  <i class="fa  fa-inr"></i> {{event.price}} 
+                </div>
+              </div> 
+            </div>
+          </div>
+    </div>
+</div>

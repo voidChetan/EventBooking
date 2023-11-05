@@ -180,19 +180,11 @@ h1 {
     flex-direction: column;
 }
 
-.login-container label {
-    text-align: left;
-    margin:0 !important;
-    color: #555;
-}
+ 
 
 .login-container input {
-    padding: 5px; 
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-.login-container select {
-    padding: 5px; 
+    padding: 10px;
+    margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 3px;
 }
@@ -213,12 +205,11 @@ h1 {
     background-color: #0056b3;
 }
 
-span {
+a {
     text-decoration: none;
     color: #007BFF;
-    cursor: pointer;
 }
 
-span:hover {
+a:hover {
     text-decoration: underline;
 }
